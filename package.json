@@ -2,13 +2,17 @@
   "name": "url",
   "version": "1.0.0",
   "main": "app.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
-   "dev":"node --watch app.js",
-   "start" :"node app.js"
+    "dev": "node --watch app.js",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
 }

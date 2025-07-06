@@ -97,3 +97,12 @@ li a{
     font-weight: 500;
     
 }
+.students{
+    display: flex;
+     height: auto;
+      width: fit-content; 
+      flex-direction: column; 
+       color: white;
+        align-items: center;
+         background-color:rgb(124, 124, 124)"
+}
