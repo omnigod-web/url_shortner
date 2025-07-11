@@ -1,6 +1,7 @@
 
 import express from "express"
 import { shortenerRoutes }  from "./routes/shortner.routes.js";
+import { authRoutes } from "./routes/auth.routes.js";
 
 const app=express();
 
@@ -16,6 +17,7 @@ app.set("view engine" , "ejs") // by default it searches into  views folder it i
 // app.set("views" , "./views") //from where to views and relative path
 
 //express router
+app.use(authRoutes)
 app.use(shortenerRoutes)
 
 //..........................................NODE SERVER....................................................................

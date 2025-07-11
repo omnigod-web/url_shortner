@@ -7,7 +7,17 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+
+    <%- include('./partials/header.ejs') %>
+    
+    <% if (isLoggedIn) { %>
+        <h1 class="status" >YOU ARE LOGGED IN </h1>
+   <% } else { %>
+       <h1 class="status"> YOU are not logged in </h1>
+   <% } %> 
+      
     <div class="container">
+    
         <h1>URL Shortner</h1>
             <form action="/" method="post">
                 <div >

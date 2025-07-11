@@ -1,20 +1,27 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body{
-    display: flex;
-    background-color: rgb(72, 67, 67);
-    /* padding-left: 10%;
-    padding-right: 10%; */
-    justify-content: center;
-    align-items: center;
-    /* height: 100vh; */
-
+/* Body background */
+body {
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
 }
-
+.status{
+        color: aquamarine;
+    display: flex
+;
+    align-self: center;
+    margin-left: 35%;
+    flex-wrap: wrap;
+}
 .container{
+    margin: auto;
    background-color: azure;
    padding: 30px;
    padding-right: 30px;
@@ -97,12 +104,237 @@ li a{
     font-weight: 500;
     
 }
-.students{
-    display: flex;
-     height: auto;
-      width: fit-content; 
-      flex-direction: column; 
-       color: white;
-        align-items: center;
-         background-color:rgb(124, 124, 124)"
+.header {
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  margin-bottom: 10px; /* 👈 Your requested bottom margin */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Logo */
+.logo h1 {
+  font-size: 1.8rem;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Navbar links */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #007bff;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .navbar a {
+    padding: 5px 0;
+  }
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Extra links */
+.extra-links {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.extra-links a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 0.9rem;
+}
+
+.extra-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive layout */
+@media (max-width: 480px) {
+  .login-container {
+    margin: 20px;
+    padding: 20px;
+  }
+}
+
+/* Container */
+.register-container {
+  max-width: 450px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.register-title {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 25px;
+}
+
+/* Form group */
+.register-form-group {
+  margin-bottom: 18px;
+}
+
+.register-form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.register-form-group input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.register-form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit button */
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Redirect link */
+.register-redirect {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
+
+.register-redirect a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register-redirect a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .register-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .register-title {
+    font-size: 1.5rem;
+  }
+
+  .register-btn {
+    font-size: 0.95rem;
+  }
 }

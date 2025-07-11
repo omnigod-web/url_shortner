@@ -1,6 +1,6 @@
 
 import { Router } from 'express';
-import { postURLShortner ,getShortnerPage , redirectToShortLink } from '../controller/postShortner.js';
+import { postURLShortner ,getShortnerPage , redirectToShortLink } from '../controllers/postShortner.js';
 
 
 const router=Router()
